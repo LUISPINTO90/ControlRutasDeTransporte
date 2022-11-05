@@ -110,7 +110,7 @@ export default class BusRoute {
       `;
 
       initialHourDate.setMinutes(
-        initialHourDate.getMinutes() + current.duration
+        initialHourDate.getMinutes() + current.next.duration
       );
 
       current = current.next;
