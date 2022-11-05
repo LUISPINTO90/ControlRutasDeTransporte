@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RUTAS</title>
+
+    <!-- Icon -->
+    <link
+      rel="shortcut icon"
+      href="https://twemoji.maxcdn.com/2/svg/1f68d.svg"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./public/style.css" />
+
+    <!-- Google Font Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- SweetAlert2 -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+
+  <body>
+    <article class="title">CONTROL DE RUTAS DE TRANSPORTE</article>
+
+    <main>
+      <section class="addBus">
+        <article class="subtitle">AGREGAR</article>
+        <form action="#" id="formAdd">
+          <article class="formField">
+            <label>NOMBRE <input type="text" id="busName" /> </label>
+          </article>
+          <article class="formField">
+            <label
+              >DURACI&Oacute;N
+              <input type="number" id="busDuration" placeholder="MINUTOS" />
+            </label>
+          </article>
+          <article class="formButton">
+            <input type="button" id="btnAddBus" value="AGREGAR" />
+          </article>
+        </form>
+      </section>
+
+      <section class="deleteBus">
+        <article class="subtitle">ELIMINAR</article>
+        <form action="#" id="formDelete">
+          <article class="formField">
+            <label>NOMBRE <input type="text" id="busNameToDelete" /> </label>
+          </article>
+          <article class="formButton">
+            <input type="button" id="btnDelBus" value="ELIMINAR" />
+          </article>
+        </form>
+      </section>
+
+      <section class="searchBus">
+        <article class="subtitle">BUSCAR</article>
+        <form action="#" id="formSearch">
+          <article class="formField">
+            <label>NOMBRE <input type="text" id="busNameToSearch" /> </label>
+          </article>
+          <article class="formButton">
+            <input type="button" id="btnSearchBus" value="BUSCAR" />
+          </article>
+        </form>
+      </section>
+
+      <section class="busList">
+        <article class="subtitle">LISTA DE LAS BASES</article>
+        <article class="formButton">
+          <input type="button" id="btnNormalList" value="LISTAR" />
+        </article>
+        <article id="busList"></article>
+      </section>
+
+      <section class="searchBus">
+        <article class="subtitle">CREAR RECORRIDO</article>
+        <p style="color: gray">(Colocar horas en formato de 24 horas).</p>
+        <br /><br />
+        <form action="#" id="formRoute">
+          <article class="formField">
+            <label
+              >BASE INICIO <input type="text" id="initialBusBase" />
+            </label>
+          </article>
+          <article class="formField">
+            <label
+              >HORA INICIO <input type="number" id="initialBusHour" />
+            </label>
+          </article>
+          <article class="formField">
+            <label
+              >MINUTOS INICIO <input type="number" id="initialBusMinutes" />
+            </label>
+          </article>
+          <article class="formField">
+            <label
+              >HORA FINALIZACI&Oacute;N<input type="number" id="finalBusHour" />
+            </label>
+          </article>
+          <article class="formField">
+            <label
+              >MINUTOS FINALIZACI&Oacute;N<input
+                type="number"
+                id="finalBusMinutes"
+              />
+            </label>
+          </article>
+          <article class="formButton">
+            <input type="button" id="btnBusesRoute" value="CREAR" />
+          </article>
+        </form>
+      </section>
+    </main>
+
+    <!-- Scripts Javascript -->
+    <script type="module" src="./public/main.js"></script>
+  </body>
+</html>

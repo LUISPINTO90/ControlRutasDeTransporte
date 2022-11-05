@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+p {
+  margin-top: 1em;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1rem;
+}
+
+body {
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #fdfdfc;
+  font-family: "Montserrat", sans-serif;
+  color: #17202a;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.247);
+}
+
+section {
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(10, 10, 10, 0.233);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+input {
+  padding: 0.5rem;
+  background-color: #e5e7ea;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 10px;
+  width: 90%;
+}
+
+input:focus {
+  background: #f3f3f0;
+  outline: none !important;
+  border: 1px solid #c6cdd6;
+  box-shadow: 0 0 10px #719ece;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="button"] {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #4d5157;
+  width: 60%;
+  margin-top: 1rem;
+  border-radius: 10px;
+  background-color: #ccc;
+}
+
+label {
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: #4d5157;
+}
+
+.title {
+  font-weight: 900;
+  font-size: 2.5rem;
+  color: #242c35;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.subtitle {
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: #242c35;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.formField {
+  padding: 0.5rem;
+}
+
+.formButton {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.swal2-styled.swal2-confirm.swalBtnColor {
+  color: #030205;
+  background-color: #ccc;
+  font-family: "Montserrat", sans-serif;
+}
